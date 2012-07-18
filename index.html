@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Multidownload by biesiad</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Multidownload</h1>
+        <p>Multiple files download - jQuery plugin</p>
+
+        <p class="view"><a href="https://github.com/biesiad/multiDownload">View the Project on GitHub <small>biesiad/multiDownload</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/biesiad/multiDownload/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/biesiad/multiDownload/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/biesiad/multiDownload">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>Multi-Download - jQuery plugin</h1>
+
+<p>Add links you want to download simultaneously:</p>
+
+<div class="highlight">
+<pre><span class="nx">$</span><span class="p">(</span><span class="s1">'.my_links'</span><span class="p">).</span><span class="nx">multiDownloadAdd</span><span class="p">();</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'.my_other_links'</span><span class="p">).</span><span class="nx">multiDownloadAdd</span><span class="p">();</span>
+</pre>
+</div>
+
+
+<p>Renove selected links from download list:</p>
+
+<div class="highlight">
+<pre><span class="nx">$</span><span class="p">(</span><span class="s1">'.my_links'</span><span class="p">).</span><span class="nx">multiDownloadRemove</span><span class="p">();</span>
+</pre>
+</div>
+
+
+<p>...or remove all links from list:</p>
+
+<div class="highlight">
+<pre><span class="nx">$</span><span class="p">.</span><span class="nx">fn</span><span class="p">.</span><span class="nx">multiDownloadRemove</span><span class="p">();</span>
+</pre>
+</div>
+
+
+<p>Set triggering element and event type on which you want to start:</p>
+
+<div class="highlight">
+<pre><span class="nx">$</span><span class="p">(</span><span class="s1">'.my_download_trigger'</span><span class="p">).</span><span class="nx">multiDownload</span><span class="p">(</span><span class="s1">'click'</span><span class="p">);</span>
+</pre>
+</div>
+
+
+<p>Set custom delay between downloads are triggered (might be useful on IE):</p>
+
+<div class="highlight">
+<pre><span class="nx">$</span><span class="p">(</span><span class="s1">'.my_download_trigger'</span><span class="p">).</span><span class="nx">multiDownload</span><span class="p">(</span><span class="s1">'click'</span><span class="p">,</span> <span class="p">{</span> <span class="nx">delay</span><span class="o">:</span> <span class="mi">500</span> <span class="p">});</span>
+</pre>
+</div>
+
+
+<p><em>Important</em>: All $('.my_links') elements must have defined "href" attribute.
+"href" must point to documents that generate proper HTML headers ("Content-Disposition: attachment; filename=my_filename").</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/biesiad">biesiad</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-19997735-6");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
