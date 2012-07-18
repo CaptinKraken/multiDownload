@@ -11,6 +11,8 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <script src="javascripts/jquery-1.5.2.min.js"></script>
+    <script src="javascripts/jquery.multiDownload.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -27,8 +29,9 @@
           <li><a href="https://github.com/biesiad/multiDownload">View On <strong>GitHub</strong></a></li>
         </ul>
       </header>
+
       <section>
-        <h1>Multi-Download - jQuery plugin</h1>
+        <h1>Using multipleDownload</h1>
 
 <p>Add links you want to download simultaneously:</p>
 
@@ -73,7 +76,19 @@
 
 <p><em>Important</em>: All $('.my_links') elements must have defined "href" attribute.
 "href" must point to documents that generate proper HTML headers ("Content-Disposition: attachment; filename=my_filename").</p>
+
+<h1>Simple example</h1>
+
+<a class='download-link' href="https://github.com/biesiad/multiDownload/zipball/master">ZIP File</a><br />
+<a class='download-link' href="https://github.com/biesiad/multiDownload/tarball/master">TAR Ball </a><br />
+<a class='download-trigger' href="">Download both</a><br />
+
+<script type="text/javascript" language="javascript" charset="utf-8">
+    $('.download-link').multiDownloadAdd();
+    $('.download-trigger').multiDownload('click');
+</script>
       </section>
+
       <footer>
         <p>This project is maintained by <a href="https://github.com/biesiad">biesiad</a></p>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
